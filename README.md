@@ -83,3 +83,10 @@ The following endpoints have NOT been implemented:
 - **`PUT api/employees/{id}/projects/{project_id}`**: updates a specific project on an employee
 
 DB Diagram - https://dbdiagram.io/d/6363fb06c9abfc61117024dd 
+
+
+
+
+SQL Portion:
+To connect to the SQL Database, go to the SQL Server Extension on codespaces. Add a connection. It will prompt for a connection string. Please paste the following into there.
+Server=localhost,1433;Database=product-db;User Id=sa;Password=MyAdminTest81;TrustServerCertificate=true;

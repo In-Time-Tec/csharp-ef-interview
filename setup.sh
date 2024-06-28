@@ -15,3 +15,5 @@ dotnet ef database update --project EmployeeSkills.DataModel --startup-project E
 dotnet dev-certs https --trust
 
 dotnet build
+
+/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P MyAdminTest81 -d master -i ./create-db.sql
