@@ -11,10 +11,6 @@ The API has the following structure:
 - **Contracts**: This project contains classes that define the contracts for data transfer between different components of the API.
 - **DataModel**: This project contains classes that represent the data models used by the Entity Framework Core ORM and contains classes that represent the database context used by the Entity Framework Core ORM.
 
-### Built With
-
-![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)	![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Sever-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![EntityFramework](https://img.shields.io/badge/Entity%20Framework-ORM-brightgreen)
-
 ## **Getting Started**
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -31,29 +27,42 @@ dotnet restore
 dotnet ef database update --project EmployeeSkills.DataModel --startup-project EmployeeSkills.Service
 ```
 4. Add a system environment variable to your system for ASPNETCORE_ENVIRONMENT and set the value to Development
+
+
+All of these steps should be ran during the setup.sh script on devcontainer initialization
+
 5. Start the API by running:
 ```
 dotnet run --project  EmployeeSkills.Service
 ```
 
-All of these steps should be ran during the setup.sh script on devcontainer init
+To use swagger for development:
+Go to the ports tab in github codespaces and make the "visibility" on both ports set to "public"
+go to: https://${codespace_name}-7146.app.github.dev/swagger/index.html (you can also go to the ports tab in codespaces and ctrl click on the forwarded address on port 7156 and then add "/swagger/index.html" to the URL)
 
-To use swagger for development, go to: https://${codespace_name}-7146.app.github.dev/swagger/index.html
+
+Please Analyze the Codebase and the DB Diagram (link at the bottom of this README)
+
+The following endpoints have been implemented:
 ### Employee Endpoints
-
-- **`GET api/employees`**: gets a list of all employees
 - **`GET api/employees/{id}`**: gets a specific employee by their id ✅
 - **`POST api/employees`**: creates a new employee ✅
 - **`PUT api/employees/{id}`**: updates an existing employee ✅
+
+### Skill Endpoints
+- **`GET api/skills/{id}`**: gets a specific skill by its id ✅
+- **`POST api/skills`**: creates a new skill ✅
+
+### Employee Endpoints
+- **`GET api/employees`**: gets a list of all employees
 - **`DELETE api/employees/{id}`**: deletes an existing employee
 
 ### Skill Endpoints
 - **`GET api/skills`**: gets a list of all skills
-- **`GET api/skills/{id}`**: gets a specific skill by its id ✅
-- **`POST api/skills`**: creates a new skill ✅
 - **`PUT api/skills/{id}`**: updates an existing skill
 - **`DELETE api/skills/{id}`**: deletes an existing skill
 
+The following endpoints have NOT been implemented:
 ### Project Endpoints
 - **`GET api/projects`**: gets a list of all projects
 - **`GET api/projects/{id}`**: gets a specific project by its id
