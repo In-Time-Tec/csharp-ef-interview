@@ -1,0 +1,22 @@
+packages
+.idea
+bin/
+obj/
+.vs
+*.user
+*development.json
+
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/.idea.StagingProcessor.iml
+/contentModel.xml
+/projectSettingsUpdater.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+/EmployeeSkills.Service/appsettings.Development.json

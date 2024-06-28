@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EmployeeSkills.DataModel\EmployeeSkills.DataModel.csproj" />
+      <ProjectReference Include="..\EmployeeSkills.Exceptions\EmployeeSkills.Exceptions.csproj" />
+      <ProjectReference Include="..\EmployeeSkills.Interfaces\EmployeeSkills.Interfaces.csproj" />
+      <ProjectReference Include="..\EmployeeSkills.Data\EmployeeSkills.Data.csproj" />
+    </ItemGroup>
+
+</Project>
