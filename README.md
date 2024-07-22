@@ -53,6 +53,8 @@ The following endpoints have been implemented:
 - **`GET api/skills/{id}`**: gets a specific skill by its id ✅
 - **`POST api/skills`**: creates a new skill ✅
 
+The following endpoints have NOT been implemented:
+
 ### Employee Endpoints
 - **`GET api/employees`**: gets a list of all employees
 - **`DELETE api/employees/{id}`**: deletes an existing employee
@@ -62,7 +64,7 @@ The following endpoints have been implemented:
 - **`PUT api/skills/{id}`**: updates an existing skill
 - **`DELETE api/skills/{id}`**: deletes an existing skill
 
-The following endpoints have NOT been implemented:
+
 ### Project Endpoints
 - **`GET api/projects`**: gets a list of all projects
 - **`GET api/projects/{id}`**: gets a specific project by its id
